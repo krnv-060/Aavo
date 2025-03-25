@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Aavo - HTML website template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        <link href="/images/favicon.svg" rel="shortcut icon" type="image/x-icon">
+        <link href="/images/webclip.svg" rel="apple-touch-icon">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <!-- Navbar Open Script -->
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+    
+                    const hamburger = document.getElementById('hamburger');
+    
+                    // Toggle the open class to animate the dropdown menu
+                    hamburger.classList.toggle('open');
+                }
+            </script>
+
+            <div class="container">
+                <div class="navbar-wrap">
+                    <div class="nav-outer">
+                        <a href="/index.html" class="brand">
+                            <img src="/images/navbar-logo.svg" alt="navbar-logo">
+                        </a>
+                    </div>
+
+                    <div class="nav-menu" id="myLinks">
+                        <div class="nav-inner">
+                            <a href="#" class="nav-link">Our Story</a>
+                            <a href="#" class="nav-link">Features</a>
+                            <a href="#" class="nav-link">Integrations</a>
+                            <a href="#" class="nav-link">Blog</a>
+                            <div class="nav-dropdown">
+                                <div class="nav-dropdown-toggle">
+                                    <div>Pages</div>
+                                    <img src="/images/dropdown-icon.svg" alt="Dropdown Icon">
+                                </div>
+                                <div class="nav-dropdown-list">
+                                    <div class="nav-list">
+                                        <a class="dropdown-link" href="#">Careers</a>
+                                        <a class="dropdown-link" href="#">Case Study</a>
+                                        <a class="dropdown-link" href="#">FAQ</a>
+                                        <a class="dropdown-link" href="#">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Script for dropdown -->
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    const dropdown = document.querySelector(".nav-dropdown");
+                                    const toggle = document.querySelector(".nav-dropdown-toggle");
+                            
+                                    toggle.addEventListener("click", function () {
+                                        dropdown.classList.toggle("open");
+                                    });
+                            
+                                    document.addEventListener("click", function (event) {
+                                        if (!dropdown.contains(event.target)) {
+                                            dropdown.classList.remove("open");
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+
+                        <div class="nav-right">
+                            <a href="#" class="button secondary">Sign In</a>
+                        </div>
+                    </div>
+
+                    <div href="javascript:void(0);" class="menu-button" id="hamburger" onclick="myFunction()">
+                        <div class="nav-top-line bar1"></div>
+                        <div class="nav-middle-line bar2"></div>
+                        <div class="nav-bottom-line bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-wrap">
+            <div class="border-outer">
+                <div class="border-block"></div>
+            </div>
+
+            <div class="small-section to-bottom">
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="hero-wrap">
+                            <div class="hero-inner">
+                                <h1 class="hero-title">Transforming Decisions with AI Intelligence</h1>
+                                <p >Empower your business with cutting-edge AI technology that transforms raw data into actionable insights.</p>
+                            </div>
+                            <a href="#" class="button">Get Started</a>
+                        </div>
+
+                        <div class="hero-img">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="section to-bottom">
+                <div class="container">
+                    <div class="footer-heading">
+                        <a href="/index.html" class="brand">
+                            <img src="/images/navbar-logo.svg" alt="navbar-logo">
+                        </a>
+                        <p>Manage, invest, and grow your wealth with smart financial tools. Join thousands who trust to simplify their financial journey.</p>
+                    </div>
+    
+                    <div class="footer-wrap">
+                        <div class="footer-left">
+                            <div class="footer-top">
+                                <div class="footer-detail">
+                                    <div class="body-small">Quick Links</div>
+    
+                                    <div class="footer-links">
+                                        <a href="/index.html" class="footer-link">Home</a>
+                                        <a href="#" class="footer-link">About</a>
+                                        <a href="#" class="footer-link">Blog</a>
+                                        <a href="#" class="footer-link">Contact</a>
+                                        <a href="#" class="footer-link">Pricing</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="footer-detail">
+                                    <div class="body-small">Resources</div>
+    
+                                    <div class="footer-links">
+                                        <a href="#" class="footer-link">Features</a>
+                                        <a href="#" class="footer-link">Integrations</a>
+                                        <a href="#" class="footer-link">Career</a>
+                                        <a href="#" class="footer-link">Terms & Condition</a>
+                                        <a href="#" class="footer-link">Privacy Policy</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="footer-detail">
+                                    <div class="body-small">Authentication</div>
+    
+                                    <div class="footer-links">
+                                        <a href="#" class="footer-link">Login</a>
+                                        <a href="#" class="footer-link">Sign Up</a>
+                                        <a href="#" class="footer-link">Forgot Password</a>
+                                    </div>
+                                </div>
+    
+                                <div class="footer-detail">
+                                    <div class="body-small">Utility Pages</div>
+    
+                                    <div class="footer-links">
+                                        <a href="#" class="footer-link">Style Guide</a>
+                                        <a href="#" class="footer-link">Changelog</a>
+                                        <a href="#" class="footer-link">Licenses</a>
+                                        <a href="#" class="footer-link">404 Page</a>
+                                        <a href="#" class="footer-link">Protected</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="footer-bottom">
+                                <p class="body-small color-white">© 2024 Aavo</p>
+                                <p class="body-small color-white">
+                                    Work by <a href="https://www.onmix.design/" target="_blank" class="utility-link">Onmix</a>. 
+                                    Made with <a href="https://www.webflow.com/" target="_blank" class="utility-link">Webflow</a>.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="footer-right">
+                            <div class="footer-detail">
+                                <p class="body-small">Location</p>
+                                <p class="body-small color-white">501 Locust Ln Willits, California(CA), 95490</p>
+                            </div>
+                            
+                            <div class="footer-detail">
+                                <p class="body-small">Contact us</p>
+                                <div class="link-outer">
+                                    <a href="tel:+1(406)555-0120" class="utility-link">+1 (406) 555-0120</a>
+                                    <a href="mailto:hello@logoipsum.com" class="utility-link">hello@logoipsum.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="footer-detail">
+                                <p class="body-small">Follow us</p>
+                                <div class="social-wrap">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                                        <img src="" loading="lazy" alt="Facebook Icon">
+                                    </a>
+
+                                    <a href="https://www.linkedin.com/" target="_blank" class="social-link">
+                                        <img src="" loading="lazy" alt="Linked Icon">
+                                    </a>
+                                    
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                        <img src="" loading="lazy" alt="Instagram Icon">
+                                    </a>
+                                    
+                                    <a href="https://www.youtube.com/" target="_blank" class="social-link">
+                                        <img src="" loading="lazy" alt="Youtube Icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
