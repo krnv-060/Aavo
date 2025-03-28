@@ -7,9 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-        <link href="/css/style.css" rel="stylesheet" type="text/css">
-        <link href="/images/favicon.svg" rel="shortcut icon" type="image/x-icon">
-        <link href="/images/webclip.svg" rel="apple-touch-icon">
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link href="./images/favicon.svg" rel="shortcut icon" type="image/x-icon">
+        <link href="./images/webclip.svg" rel="apple-touch-icon">
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -34,8 +34,8 @@
             <div class="container">
                 <div class="navbar-wrap">
                     <div class="nav-outer">
-                        <a href="/index.html" class="brand">
-                            <img src="/images/navbar-logo.svg" alt="navbar-logo">
+                        <a href="./index.html" class="brand">
+                            <img src="./images/navbar-logo.svg" alt="navbar-logo">
                         </a>
                     </div>
 
@@ -48,7 +48,7 @@
                             <div class="nav-dropdown">
                                 <div class="nav-dropdown-toggle">
                                     <div>Pages</div>
-                                    <img src="/images/dropdown-icon.svg" alt="Dropdown Icon">
+                                    <img src="./images/dropdown-icon.svg" alt="Dropdown Icon">
                                 </div>
                                 <div class="nav-dropdown-list">
                                     <div class="nav-list">
@@ -111,33 +111,298 @@
 
                         <div class="hero-img">
                             <div class="background-line"></div>
-                            <div class="hero-left"><img src="/images/hero-left.png" class="cover-image" alt="Hero Graphics"></div>
+                            <div class="hero-left"><img src="./images/hero-left.png" class="cover-image" alt="Hero Graphics"></div>
                             <div class="hero-middle">
                                 <div class="hero-data">
                                     <div class="hero-icon">
-                                        <img src="/images/hero-icon.svg" alt="Hero Icon">
+                                        <img src="./images/hero-icon.svg" alt="Hero Icon">
                                     </div>
                                     <div class="flex-block">
                                         <div class="hero-text-start">Generate</div>
-                                        <div class="hero-text">transaction</div>
+                                        <div id="typing-container">
+                                            <div class="hero-text" id="typed-text"></div>
+                                            <script src="./auto-typing.js"></script>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="submit-outer">
-                                    <img src="/images/submit-icon.svg" loading="lazy" alt="Submit Icon">
+                                    <img src="./images/submit-icon.svg" loading="lazy" alt="Submit Icon">
                                 </div>
                             </div>
                             <div class="hero-right">
-                                <img src="/images/hero-right.png" loading="eager" alt="Hero Right" class="cover-image">
+                                <img src="./images/hero-right.png" loading="eager" alt="Hero Right" class="cover-image">
                             </div>
+                            <div class="hero-top-right"><div class="inner-block"></div></div>
+                            <div class="hero-top-left"><div class="inner-block"></div></div>
+                            <div class="hero-bottom-right"><div class="inner-block"></div></div>
+                            <div class="hero-bottom-left"><div class="inner-block"></div></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <section class="small-section">
+                <div class="border-top"></div>
+                <div class="container">
+                    <div class="brand-wrap">
+                        <p class="body-small color-white">Trusted By Innovative Companies Worldwide</p>
+                        <div class="brand-inner">
+                            <img src="./images/logo-01.svg" alt="Logo 01">
+                            <img src="./images/logo-02.svg" alt="Logo 02">
+                            <img src="./images/logo-03.svg" alt="Logo 03">
+                            <img src="./images/logo-04.svg" alt="Logo 04">
+                            <img src="./images/logo-05.svg" alt="Logo 05">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom"></div>
+                
+                <script>
+                    // Wait for the DOM to load
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Select the parent container and all image elements inside it
+                        const brandInner = document.querySelector('.brand-inner');
+                        const images = brandInner.getElementsByTagName('img');
+                        
+                        // Check if the number of images is odd
+                        if (images.length % 2 !== 0) {
+                            // If odd, add the 'span2' class to the last image
+                            images[images.length - 1].classList.add('span2');
+                        }
+                    });
+                </script>
+            </section>
+
+            <section class="section to-bottom">
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="section-title-wrap">
+                            <div class="sub-heading"><div class="caption">Features</div></div>
+                            <h2>Intelligence That Scales with Your Business</h2>
+                        </div>
+
+                        <div class="feature-wrap">
+                            <div class="feature-top">
+                                <div class="feature-card">
+                                    <div class="feature-image">
+                                        <img src="./images/feature-image-01.png" alt="Feature Image 01" class="cover-image">
+                                    </div>
+                                    <div class="feature-data">
+                                        <h4>Data-Driven Insights</h4>
+                                        <p>Turn raw data into clear, actionable insights to drive smarter business decisions.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <div class="feature-image">
+                                        <img src="./images/feature-image-02.png" alt="Feature Image 02" class="cover-image">
+                                    </div>
+                                    <div class="feature-data">
+                                        <h4>Process Automation</h4>
+                                        <p>Automate repetitive tasks for efficiency and accuracy across various operations.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <div class="feature-image">
+                                        <img src="./images/feature-image-03.png" alt="Feature Image 03" class="cover-image">
+                                    </div>
+                                    <div class="feature-data">
+                                        <h4>Predictive Analytics</h4>
+                                        <p>Forecast trends and outcomes to make proactive, data-backed adjustments.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-bottom">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="./images/feature-image-04.png" alt="Feature Image 04" class="cover-image">
+                                    </div>
+                                    <div class="feature-data">
+                                        <h4>Seamless Integrations</h4>
+                                        <p>Aavo integrates with popular business tools like CRM, ERP, and cloud storage solutions, ensuring a cohesive experience across your tech.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="./images/feature-image-05.png" alt="Feature Image 05" class="cover-image">
+                                    </div>
+                                    <div class="feature-data">
+                                        <h4>User-Friendly Interface</h4>
+                                        <p>Aavo’s intuitive interface makes advanced AI accessible for both technical and non-technical teams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom"></div>
+            </section>
+
+            <section class="section to-bottom">
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="section-title-wrap">
+                            <div class="sub-heading"><div class="caption">Why Choose Us</div></div>
+                            <h2>Why Leading Businesses Choose Our AI Solutions</h2>
+                        </div>
+
+                        <div class="features-wrap">
+                            <div class="features-card">
+                                <div class="features-img">
+                                    <img src="./images/choose-icon-01.svg" alt="Choose Icon 01" class="features-icon">
+                                </div> 
+                                <div class="feature-content">
+                                    <h4>Easy Access</h4>
+                                    <p>A user-friendly interface makes AI functions simple for all skill levels.</p>
+                                </div>
+                            </div>
+
+                            <div class="features-card">
+                                <div class="features-img">
+                                    <img src="./images/choose-icon-02.svg" alt="Choose Icon 02" class="features-icon">
+                                </div> 
+                                <div class="feature-content">
+                                    <h4>Smart Automation</h4>
+                                    <p>Automate routine tasks to focus on high-impact, strategic work.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="features-card">
+                                <div class="features-img">
+                                    <img src="./images/choose-icon-03.svg" alt="Choose Icon 03" class="features-icon">
+                                </div> 
+                                <div class="feature-content">
+                                    <h4>Trusted Security</h4>
+                                    <p>Top-level encryption and compliance ensure your data stays secure.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="features-card">
+                                <div class="features-img">
+                                    <img src="./images/choose-icon-04.svg" alt="Choose Icon 04" class="features-icon">
+                                </div> 
+                                <div class="feature-content">
+                                    <h4>Insightful Analytics</h4>
+                                    <p>Unlock actionable insights and accurate forecasts for smarter decisions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="features-card">
+                                <div class="features-img">
+                                    <img src="./images/choose-icon-05.svg" alt="Choose Icon 05" class="features-icon">
+                                </div> 
+                                <div class="feature-content">
+                                    <h4>Seamless Integrations</h4>
+                                    <p>Effortlessly connect with your existing tools for a unified experience.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="features-card">
+                                <div class="features-img">
+                                    <img src="./images/choose-icon-06.svg" alt="Choose Icon 06" class="features-icon">
+                                </div> 
+                                <div class="feature-content">
+                                    <h4>Dedicated Support</h4>
+                                    <p>Our 24/7 support team is ready to help you succeed with AIPro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom"></div>
+            </section>
+
+            <section class="section bg-black">
+                <div class="container">
+                    <div class="data-outer">
+                        <div class="data-wrap">
+                            <div class="fill-block">
+                                <div class="data-content">
+                                    <div class="data-top">
+                                        <div class="data-head">
+                                            <div class="sub-heading"><div class="caption">Protection</div></div>
+                                            <h2>Advanced Protection for Data</h2>
+                                        </div>
+                                        <p>Rest easy knowing your data is secure. Our platform employs top security protocols to safeguard against breaches and unauthorized access, so you can focus on what matters most.</p>
+                                    </div>
+
+                                    <ul class="data-list">
+                                        <li class="data-list-item">Regulatory Compliance: Meets GDPR and SOC 2 standards</li>
+                                        <li class="data-list-item">Two-Step Access: Multi-factor authentication for added security.</li>
+                                        <li class="data-list-item">24/7 Monitoring: Continuous monitoring to prevent threats.</li>
+                                    </ul>
+
+                                    <a href="#" class="button">Get Started</a>
+                                </div>
+                            </div>
+
+                            <div class="fill-block">
+                                <div class="features-image">
+                                    <img src="./images/why-choose-image-01.png" alt="Why Choose Image 01" class="cover-image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="data-wrap swap">
+                            <div class="fill-block">
+                                <div class="data-content">
+                                    <div class="data-top">
+                                        <div class="data-head">
+                                            <div class="sub-heading"><div class="caption">Digital Growth</div></div>
+                                            <h2>Data Security at Every Step</h2>
+                                        </div>
+                                        <p>Safeguard your data with Aavo’s advanced security measures, ensuring peace of mind every step of the way.</p>
+                                    </div>
+
+                                    <ul class="data-list">
+                                        <li class="data-list-item">End-to-End Encryption: Your data is protected from entry to storage.</li>
+                                        <li class="data-list-item">Compliance Ready: Aligned with GDPR, SOC 2, and other industry standards.</li>
+                                        <li class="data-list-item">Secure Access Control: Restrict access to authorized users only.</li>
+                                    </ul>
+
+                                    <a href="#" class="button">Get Started</a>
+                                </div>
+                            </div>
+
+                            <div class="fill-block">
+                                <div class="features-image">
+                                    <img src="./images/why-choose-image-01.png" alt="Why Choose Image 01" class="cover-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section to-bottom">
+                <div class="border-top"></div>
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="button-outer">
+                            <div class="section-title-wrap">
+                                <div class="sub-heading"><div class="caption">Integration</div></div>
+                                <h2>Integrate Effortlessly with Your Existing Systems</h2>
+                            </div>
+                            <a href="#" class="button">View All</a>
+                        </div>
+
+                        <div class="integration-outer">
+                            <div class="integrations">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom"></div>
+            </section>
             
             <div id="cta">
                 <script> 
                     $(function(){
-                      $("#cta").load("/components/cta.html"); 
+                      $("#cta").load("./components/cta.html"); 
                     });
                 </script>
             </div>
@@ -145,8 +410,8 @@
             <footer class="section to-bottom">
                 <div class="container">
                     <div class="footer-heading">
-                        <a href="/index.html" class="brand">
-                            <img src="/images/navbar-logo.svg" alt="navbar-logo">
+                        <a href="./index.html" class="brand">
+                            <img src="./images/navbar-logo.svg" alt="navbar-logo">
                         </a>
                         <p>Manage, invest, and grow your wealth with smart financial tools. Join thousands who trust to simplify their financial journey.</p>
                     </div>
@@ -158,7 +423,7 @@
                                     <div class="body-small">Quick Links</div>
     
                                     <div class="footer-links">
-                                        <a href="/index.html" class="footer-link">Home</a>
+                                        <a href="./index.html" class="footer-link">Home</a>
                                         <a href="#" class="footer-link">About</a>
                                         <a href="#" class="footer-link">Blog</a>
                                         <a href="#" class="footer-link">Contact</a>
@@ -228,19 +493,19 @@
                                 <p class="body-small">Follow us</p>
                                 <div class="social-wrap">
                                     <a href="https://www.facebook.com/" target="_blank" class="social-link">
-                                        <img src="/images/facebook-icon.svg" loading="lazy" alt="Facebook Icon">
+                                        <img src="./images/facebook-icon.svg" loading="lazy" alt="Facebook Icon">
                                     </a>
 
                                     <a href="https://www.linkedin.com/" target="_blank" class="social-link">
-                                        <img src="/images/linkedin-icon.svg" loading="lazy" alt="Linked Icon">
+                                        <img src="./images/linkedin-icon.svg" loading="lazy" alt="Linked Icon">
                                     </a>
                                     
                                     <a href="https://www.instagram.com/" target="_blank" class="social-link">
-                                        <img src="/images/instagram-icon.svg" loading="lazy" alt="Instagram Icon">
+                                        <img src="./images/instagram-icon.svg" loading="lazy" alt="Instagram Icon">
                                     </a>
                                     
                                     <a href="https://www.youtube.com/" target="_blank" class="social-link">
-                                        <img src="/images/youtube-icon.svg" loading="lazy" alt="Youtube Icon">
+                                        <img src="./images/youtube-icon.svg" loading="lazy" alt="Youtube Icon">
                                     </a>
                                 </div>
                             </div>
