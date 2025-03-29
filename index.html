@@ -10,26 +10,11 @@
         <link href="./css/style.css" rel="stylesheet" type="text/css">
         <link href="./images/favicon.svg" rel="shortcut icon" type="image/x-icon">
         <link href="./images/webclip.svg" rel="apple-touch-icon">
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="./js/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
-            <!-- Navbar Open Script -->
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myLinks");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-    
-                    const hamburger = document.getElementById('hamburger');
-    
-                    // Toggle the open class to animate the dropdown menu
-                    hamburger.classList.toggle('open');
-                }
-            </script>
+            <script src="./js/navbar-open.js"></script>
 
             <div class="container">
                 <div class="navbar-wrap">
@@ -61,22 +46,7 @@
                             </div>
 
                             <!-- Script for dropdown -->
-                            <script>
-                                document.addEventListener("DOMContentLoaded", function () {
-                                    const dropdown = document.querySelector(".nav-dropdown");
-                                    const toggle = document.querySelector(".nav-dropdown-toggle");
-                            
-                                    toggle.addEventListener("click", function () {
-                                        dropdown.classList.toggle("open");
-                                    });
-                            
-                                    document.addEventListener("click", function (event) {
-                                        if (!dropdown.contains(event.target)) {
-                                            dropdown.classList.remove("open");
-                                        }
-                                    });
-                                });
-                            </script>
+                            <script src="./js/nav-dropdown-open.js"></script>
                         </div>
 
                         <div class="nav-right">
@@ -121,7 +91,7 @@
                                         <div class="hero-text-start">Generate</div>
                                         <div id="typing-container">
                                             <div class="hero-text" id="typed-text"></div>
-                                            <script src="./auto-typing.js"></script>
+                                            <script src="./js/auto-typing.js"></script>
                                         </div>
                                     </div>
                                 </div>
@@ -391,12 +361,240 @@
 
                         <div class="integration-outer">
                             <div class="integrations">
-                                
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-07.svg" alt="Integration Logo 07" class="integration-image">
+                                </div>
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-06.svg" alt="Integration Logo 06" class="integration-image">
+                                </div>
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-05.svg" alt="Integration Logo 05" class="integration-image">
+                                </div>
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-04.svg" alt="Integration Logo 04" class="integration-image">
+                                </div>
+                            </div>
+
+                            <div class="arrow-block">
+                                <img src="./images/arrow-image-left.png" alt="Arrow Image Left" class="full-image">
+                            </div>
+
+                            <div class="center-block">
+                                <div class="aavo-logo">
+                                    <img src="./images/navbar-logo.svg" alt="Navbar Icon">
+                                </div>
+                            </div>
+
+                            <div class="arrow-block">
+                                <img src="./images/arrow-image-right.png" alt="Arrow Image Right" class="full-image">
+                            </div>
+
+                            <div class="integrations">
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-08.svg" alt="Integration Logo 08" class="integration-image">
+                                </div>
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-03.svg" alt="Integration Logo 03" class="integration-image">
+                                </div>
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-02.svg" alt="Integration Logo 02" class="integration-image">
+                                </div>
+                                <div class="integration-block">
+                                    <img src="./images/integration-logo-01.svg" alt="Integration Logo 01" class="integration-image">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="border-bottom"></div>
+            </section>
+
+            <section class="section to-bottom">
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="section-title-wrap">
+                            <div class="sub-heading"><div class="caption">Pricing</div></div>
+                            <h2>Flexible Plans for Every Stage of Growth</h2>
+                        </div>
+
+                        <div class="pricing-wrap">
+                            <div class="price-block">
+                                <div class="pricing-top">
+                                    <div class="body-large">Basic Plan</div>
+                                    <h3>$29.00/<sub>month</sub></h3>
+                                </div>
+
+                                <ul class="price-list">
+                                    <li class="pricing-list-item">Access to core AI tools</li>
+                                    <li class="pricing-list-item">Up to 3 users</li>
+                                    <li class="pricing-list-item">Basic analytics</li>
+                                    <li class="pricing-list-item">Standard support</li>
+                                    <li class="pricing-list-item">Monthly usage reports</li> 
+                                    <li class="pricing-list-item">Limited data storage (10GB)</li> 
+                                </ul>
+
+                                <div class="align-center">
+                                    <a href="#" class="button secondary">Get Startd</a>
+                                </div>
+                            </div>
+                            
+                            <div class="price-block bg-black">
+                                <div class="pricing-top">
+                                    <div class="body-large">Pro Plan</div>
+                                    <h3>$79.00/<sub>month</sub></h3>
+                                </div>
+
+                                <ul class="price-list">
+                                    <li class="pricing-list-item">Everything in Basic</li>
+                                    <li class="pricing-list-item">Up to 3 users</li>
+                                    <li class="pricing-list-item">Advanced analytics</li>
+                                    <li class="pricing-list-item">Integrations with major platforms</li>
+                                    <li class="pricing-list-item">Priority support</li>
+                                    <li class="pricing-list-item">Customizable dashboards</li>
+                                </ul>
+
+                                <div class="align-center">
+                                    <a href="#" class="button">Get Startd</a>
+                                </div>
+                            </div>
+                            
+                            <div class="price-block">
+                                <div class="pricing-top">
+                                    <div class="body-large">Enterprise Plan</div>
+                                    <h3>$99.00/<sub>month</sub></h3>
+                                </div>
+
+                                <ul class="price-list">
+                                    <li class="pricing-list-item">Everything in Pro</li>
+                                    <li class="pricing-list-item">Unlimited users</li>
+                                    <li class="pricing-list-item">Customizable features and workflows</li>
+                                    <li class="pricing-list-item">Dedicated account manager</li>
+                                    <li class="pricing-list-item">24/7 premium support</li>
+                                    <li class="pricing-list-item">Full API access</li>
+                                    <li class="pricing-list-item">Unlimited data storage</li>
+                                </ul>
+
+                                <div class="align-center">
+                                    <a href="#" class="button secondary">Get Startd</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom"></div>
+            </section>
+
+            <section class="section to-bottom">
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="section-title-wrap">
+                            <div class="sub-heading"><div class="caption">Testimonials</div></div>
+                            <h2>What Our Clients Say</h2>
+                        </div>
+
+                        <script src="./js/tab.js"></script>
+                        <div class="review-tabs">
+                            <div class="review-menu">
+                                <button class="review-link active" onclick="openTab(event, 'tab1')">
+                                    <div class="review-img"><img loading="lazy" src="./images/review-thumb01.jpg" alt="Review Thumb 01" class="cover-image"></div>
+                                    <div>
+                                        <h5>John Doe</h5>
+                                        <p class="body-small">Chief Data Scientist</p>
+                                    </div>
+                                </button>
+                                
+                                <button class="review-link" onclick="openTab(event, 'tab2')">
+                                    <div class="review-img"><img loading="lazy" src="./images/review-thumb02.jpg" alt="Review Thumb 02" class="cover-image"></div>
+                                    <div>
+                                        <h5>Jane Smith</h5>
+                                        <p class="body-small">CEO</p>
+                                    </div>
+                                </button>
+                                
+                                <button class="review-link" onclick="openTab(event, 'tab3')">
+                                    <div class="review-img"><img loading="lazy" src="./images/review-thumb03.jpg" alt="Review Thumb 03" class="cover-image"></div>
+                                    <div>
+                                        <h5>David Martin</h5>
+                                        <p class="body-small">VP of Operations</p>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="review-tab-content">
+                                <div id="tab1" class="review-pane active">
+                                    <img loading="lazy" src="./images/quote-icon.svg" alt="Quote Icon" class="quote-icon">
+                                    <p class="body-ex-large">Adopting this AI SaaS platform has been a seamless process for our team. The system is intuitive and easy to navigate, allowing us to integrate it quickly into our existing workflows without significant downtime</p>
+                                </div>
+                                
+                                <div id="tab2" class="review-pane">
+                                    <img loading="lazy" src="./images/quote-icon.svg" alt="Quote Icon" class="quote-icon">
+                                    <p class="body-ex-large">Working with this team has been a truly transformative experience for us. From the outset, they took the time to understand our unique challenges and goals, and crafted a tailored strategy that aligned perfectly with our vision.</p>
+                                </div>
+                                
+                                <div id="tab3" class="review-pane">
+                                    <img loading="lazy" src="./images/quote-icon.svg" alt="Quote Icon" class="quote-icon">
+                                    <p class="body-ex-large">Our company was experiencing significant challenges with project management and resource allocation. That’s when we decided to collaborate with this team, and it was a decision we’ll never regret. Their deep industry knowledge and experience .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom"></div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-wrap">
+                        <div class="button-outer">
+                            <div class="section-title-wrap">
+                                <div class="sub-heading"><div class="caption">Blog</div></div>
+                                <h2>Why Leading Businesses Choose Our AI Solutions</h2>
+                            </div>
+
+                            <a href="#" class="button">View All Blog</a>
+                        </div>
+
+                        <div class="blog-outer">
+                            <div class="blog-wrap">
+                                <a href="#" class="blog-card">
+                                    <div class="blog-thumb">
+                                        <img src="./images/blog-thumb01.jpg" alt="Blog Thumb 01" class="cover-image">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <div>AI Solutions</div>-<div>December 2, 2024</div>
+                                        </div>
+                                        <h4 class="blog-title">How AI is Revolutionizing Data Analytics for Businesses</h4>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="blog-card">
+                                    <div class="blog-thumb">
+                                        <img src="./images/blog-thumb02.jpg" alt="Blog Thumb 02" class="cover-image">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <div>AI Solutions</div>-<div>December 2, 2024</div>
+                                        </div>
+                                        <h4 class="blog-title">How AI is Revolutionizing Data Analytics for Businesses</h4>
+                                    </div>
+                                </a>
+                                
+                                <a href="#" class="blog-card">
+                                    <div class="blog-thumb">
+                                        <img src="./images/blog-thumb03.jpg" alt="Blog Thumb 03" class="cover-image">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-info">
+                                            <div>AI Solutions</div>-<div>December 2, 2024</div>
+                                        </div>
+                                        <h4 class="blog-title">How AI is Revolutionizing Data Analytics for Businesses</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
             <div id="cta">
