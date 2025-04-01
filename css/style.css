@@ -790,6 +790,14 @@ nav {
     overflow: hidden;
     background-color: var(--secondary);
 }
+
+.slide-cover {
+    background-color: #191919;
+    width: 100%;
+    position: absolute;
+    inset: 0%;
+    display: none;
+}
 /* Cta section ends */
 
 /* Brand section starts */
@@ -1840,7 +1848,7 @@ button {
         margin-top: -100px;
         margin-bottom: -100px;
         aspect-ratio: 100 / 100;
-        transform: rotate(90deg);
+        transform: rotate(90deg) !important;
     }
 
     .full-image {
