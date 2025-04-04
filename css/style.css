@@ -298,6 +298,14 @@ sub {
     margin-right: auto;
     text-align: center;
 }
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 /* Reuseable class ends */
 
 /* Navbar class starts*/
@@ -407,6 +415,10 @@ nav {
 
 .dropdown-link:hover {
     background-color: var(--primary);
+}
+
+.dropdown-link.w--current {
+    color: #0082f3;
 }
 
 .menu-button {
@@ -1482,6 +1494,82 @@ button {
 }
 /* Team section ends */
 
+/* Integration page starts */
+.integration-wrap {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    border-top: 1px solid var(--border);
+    background-color: var(--border);
+}
+
+.integration-card {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 40px;
+    height: 100%;
+    padding: 60px 40px;
+    color: var(--gray);
+    text-decoration: none;
+    background-color: var(--background);
+    transition: background-color .3s;
+}
+
+.integration-card:hover {
+    background-color: var(--black);
+}
+
+.integration-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.integration-inner {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 15px;
+}
+/* Integration page ends */
+
+/* Case study page starts */
+.case-study-wrap {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background-color: var(--border);
+}
+
+.case-study-card {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding: 30px;
+    grid-row-gap: 30px;
+    color: var(--gray);
+    text-decoration: none;
+    background-color: var(--background);
+}
+
+.case-study-info {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 10px;
+}
+
+.blog-info {
+    display: flex;
+    grid-column-gap: 6px;
+}
+/* Case study page ends */
+
 @media screen and (max-width: 991px) {
     .section {
         padding-top: var(--tablet-spacing);
@@ -1749,6 +1837,10 @@ button {
     .team-card {
         padding: 15px;
     }
+
+    .integration-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
@@ -1925,6 +2017,10 @@ button {
     .team-wrap {
         grid-template-columns: 1fr 1fr;
     }
+
+    .integration-card {
+        padding: 40px 30px;
+    }
 }
 
 
@@ -2080,5 +2176,13 @@ button {
 
     .about-content {
         flex-flow: column;
+    }
+
+    .case-study-wrap, .integration-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .integration-card {
+        padding: 30px 20px;
     }
 }
