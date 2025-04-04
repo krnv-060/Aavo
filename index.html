@@ -28,10 +28,10 @@
 
                     <div class="nav-menu" id="myLinks">
                         <div class="nav-inner">
-                            <a href="#" class="nav-link">Our Story</a>
-                            <a href="#" class="nav-link">Features</a>
-                            <a href="#" class="nav-link">Integrations</a>
-                            <a href="#" class="nav-link">Blog</a>
+                            <a href="./about.html" class="nav-link">Our Story</a>
+                            <a href="./feature.html" class="nav-link">Features</a>
+                            <a href="./integration.html" class="nav-link">Integrations</a>
+                            <a href="./blog.html" class="nav-link">Blog</a>
                             <div class="nav-dropdown">
                                 <div class="nav-dropdown-toggle">
                                     <div>Pages</div>
@@ -39,10 +39,10 @@
                                 </div>
                                 <div class="nav-dropdown-list">
                                     <div class="nav-list">
-                                        <a class="dropdown-link" href="#">Careers</a>
-                                        <a class="dropdown-link" href="#">Case Study</a>
-                                        <a class="dropdown-link" href="#">FAQ</a>
-                                        <a class="dropdown-link" href="#">Contact</a>
+                                        <a class="dropdown-link" href="./career.html">Careers</a>
+                                        <a class="dropdown-link" href="./case-study.html">Case Study</a>
+                                        <a class="dropdown-link" href="./faq.html">FAQ</a>
+                                        <a class="dropdown-link" href="./contact.html">Contact</a>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="nav-right">
-                            <a href="#" class="button secondary">Sign In</a>
+                            <a href="./contact.html" class="button secondary">Sign In</a>
                         </div>
                     </div>
 
@@ -544,61 +544,14 @@
                 <div class="border-bottom"></div>
             </section>
 
-            <section class="section to-bottom">
-                <div class="container">
-                    <div class="section-wrap">
-                        <div class="button-outer">
-                            <div class="section-title-wrap">
-                                <div class="sub-heading" data-aos="fade-up" data-aos-duration="1000"><div class="caption">Blog</div></div>
-                                <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Why Leading Businesses Choose Our AI Solutions</h2>
-                            </div>
-
-                            <a href="#" class="button" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">View All Blog</a>
-                        </div>
-
-                        <div class="blog-outer">
-                            <div class="blog-wrap">
-                                <a href="#" class="blog-card">
-                                    <div class="blog-thumb">
-                                        <img src="./images/blog-thumb01.jpg" alt="Blog Thumb 01" class="cover-image">
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-info">
-                                            <div>AI Solutions</div>-<div>December 2, 2024</div>
-                                        </div>
-                                        <h4 class="blog-title">How AI is Revolutionizing Data Analytics for Businesses</h4>
-                                    </div>
-                                </a>
-                                
-                                <a href="#" class="blog-card">
-                                    <div class="blog-thumb">
-                                        <img src="./images/blog-thumb02.jpg" alt="Blog Thumb 02" class="cover-image">
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-info">
-                                            <div>Customer Experience</div>-<div>December 2, 2024</div>
-                                        </div>
-                                        <h4 class="blog-title">AI in Customer Service: Enhancing the User Experience</h4>
-                                    </div>
-                                </a>
-                                
-                                <a href="#" class="blog-card">
-                                    <div class="blog-thumb">
-                                        <img src="./images/blog-thumb03.jpg" alt="Blog Thumb 03" class="cover-image">
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-info">
-                                            <div>Predictive Analytics</div>-<div>November 29, 2024</div>
-                                        </div>
-                                        <h4 class="blog-title">How AI is Shaping the Future of Decision-Making</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <div id="blog">
+                <script> 
+                    $(function(){
+                      $("#blog").load("./components/blog.html"); 
+                    });
+                </script>
+            </div>
+            
             <section class="section to-bottom">
                 <div class="container">
                     <div class="section-wrap">
@@ -720,7 +673,7 @@
     
                                     <div class="footer-links">
                                         <a href="./index.html" class="footer-link">Home</a>
-                                        <a href="#" class="footer-link">About</a>
+                                        <a href="./about.html" class="footer-link">About</a>
                                         <a href="#" class="footer-link">Blog</a>
                                         <a href="#" class="footer-link">Contact</a>
                                         <a href="#" class="footer-link">Pricing</a>
@@ -811,8 +764,6 @@
             </footer>
         </div>
 
-        <script>
-            AOS.init();
-        </script>
+        <script> AOS.init(); </script>
     </body>
 </html>
