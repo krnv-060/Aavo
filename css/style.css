@@ -2021,6 +2021,11 @@ button {
     .integration-card {
         padding: 40px 30px;
     }
+
+    .case-study-card {
+        grid-row-gap: 20px;
+        padding: 15px;
+    }
 }
 
 
