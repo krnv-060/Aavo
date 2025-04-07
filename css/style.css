@@ -716,7 +716,7 @@ nav {
     transition: color 300ms ease;
 }
 
-.footer-link:hover {
+.footer-link:hover, .footer-link.w--current {
     color: var(--primary-hover);
 }
 
