@@ -310,6 +310,10 @@ sub {
 .pagination button {
     cursor: pointer;
 }
+
+.bg-background {
+    background-color: var(--background);
+}
 /* Reuseable class ends */
 
 /* Navbar class starts*/
@@ -1637,6 +1641,135 @@ button {
 }
 /* Review secion ends */
 
+/* Carrer page starts */
+.work-wrap {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    background-color: var(--border);
+}
+
+.team-outer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    background-color: var(--background);
+    grid-area: span 2 / span 2 / span 2 / span 2;
+}
+
+.work-top {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 30px;
+    padding: 40px;
+    background-color: var(--background);
+}
+
+.team-img {
+    aspect-ratio: 59 / 66;
+    background-color: var(--img-background);
+    overflow: hidden;
+}
+
+.work-img {
+    aspect-ratio: 1;
+    background-color: var(--img-background);
+    width: 100%;
+    overflow: hidden;
+}
+
+.work-bottom {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 20px 40px;
+    border-top: 1px solid var(--border);
+}
+
+.work-right {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 40px;
+    padding: 40px;
+    background-color: var(--background);
+}
+
+.work-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-row-gap: 20px;
+}
+
+.work-image {
+    aspect-ratio: 71 / 59;
+    background-color: var(--img-background);
+    overflow: hidden;
+}
+
+.job-wrap {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    border-top: 1px solid var(--border);
+    background-color: var(--border);
+}
+
+.job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 32px;
+    height: 100%;
+    padding: 40px 30px;
+    background-color: var(--background);
+    transition: background-color .3s;
+}
+/* Carrer page ends */
+
+/* Contact section starts */
+.contact-block {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    border-top: 1px solid var(--border);
+    background-color: var(--border);
+}
+
+.contact-top {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 10px;
+    padding: 30px;
+    background-color: var(--background);
+}
+
+.contact-bottom {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 1px;
+}
+/* Contact section ends */
+
 @media screen and (max-width: 991px) {
     .section {
         padding-top: var(--tablet-spacing);
@@ -1911,6 +2044,30 @@ button {
 
     .review-card {
         padding: 25px;
+    }
+
+    .work-top {
+        padding: 20px;
+    }
+
+    .work-bottom {
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .work-right {
+        padding: 20px;
+    }
+
+    .job-card {
+        grid-row-gap: 10px;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30px 20px;
     }
 }
 
