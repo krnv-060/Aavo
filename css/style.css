@@ -23,6 +23,10 @@
 }
 
 /* Reuseable class starts */
+html {
+    height: 100%;
+}
+
 body {
     margin: 0px;
     background-color: var(--background);
@@ -2068,8 +2072,180 @@ input[type="submit"] {
     margin-bottom: 30px;
     padding-left: 24px;
 }
-
 /* Style Guide section ends */
+
+/* Error page starts */
+.utility-body {
+    display: flex;
+    min-height: 100%;
+}
+
+.page-outer {
+    width: 100%;
+    position: relative;
+}
+
+.top-block, .bottom-block {
+    background-color: var(--background);
+    height: 9.5%;
+}
+
+.utility-wrap {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    height: 100%;
+}
+
+.middle-section {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.error-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 60px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--black);
+}
+
+.error-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row-gap: 40px;
+}
+
+.error-graphics {
+    width: 100%;
+    max-width: 462px;
+}
+
+.error-inner {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row-gap: 12px;
+}
+/* Error page ends */
+
+/* Coming-soon page starts */
+.coming-outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-section {
+    background-color: var(--background);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bottom-section {
+    background-color: var(--background);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.coming-soon-wrap {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    height: 100%;
+    background-color: var(--border);
+}
+
+.coming-soon-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--black);
+}
+
+.hero-inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row-gap: 10px;
+}
+
+.coming-soon-right {
+    background-color: var(--black);
+    padding: 20px;
+}
+
+.coming-soon-img {
+    background-color: var(--img-background);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Coming-soon page ends */
+
+/* Login page starts */
+.user-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: auto;
+    padding: 40px 0;
+    position: static;
+    background-color: var(--black);
+}
+
+.user-form {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 50px;
+    width: 100%;
+    max-width: 570px;
+    padding: 50px;
+}
+
+.form-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row-gap: 5px;
+    background-color: var(--transparent);
+    border-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.form-field {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 30px;
+}
+
+.user-link {
+    color: var(--primary-hover);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.user-link:hover {
+    color: var(--white);
+}
+/* Login page ends */
 
 @media screen and (max-width: 991px) {
     .section {
@@ -2611,6 +2787,14 @@ input[type="submit"] {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .coming-soon-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .user-form, .success-state {
+        padding: 25px;
+    }
 }
 
 
@@ -2804,5 +2988,24 @@ input[type="submit"] {
         grid-column-gap: 15px;
         grid-row-gap: 15px;
         grid-template-columns: 1fr;
+    }
+
+    .error-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .coming-soon-content {
+        padding: 20px;
+    }
+
+    .coming-outer {
+        grid-row-gap: 20px;
+        flex-flow: column;
+    }
+
+    .user-form {
+        grid-row-gap: 30px;
+        padding: 20px;
     }
 }
