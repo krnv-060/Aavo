@@ -2247,6 +2247,85 @@ input[type="submit"] {
 }
 /* Login page ends */
 
+/* Case study detail page starts */
+.detail-img {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+}
+
+.detail-image {
+    aspect-ratio: 314 / 135;
+    background-color: var(--img-background);
+}
+
+.case-study-outer {
+    display: flex;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    background-color: var(--border);
+    position: relative;
+}
+
+.case-study-left {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: var(--background);
+}
+
+.case-study-inner {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: .72fr auto 1fr;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 10px;
+}
+
+.case-study-right {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 1px;
+    width: 100%;
+}
+
+.case-study-top {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-row-gap: 40px;
+    background-color: var(--background);
+    padding: 40px;
+}
+
+.case-study-data {
+    display: flex;
+    flex-flow: column;
+    grid-row-gap: 20px;
+}
+
+.case-study-bottom {
+    display: flex;
+    grid-column-gap: 1px;
+    background-color: var(--border);
+}
+
+.key-card {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-row-gap: 15px;
+    padding: 80px 40px 40px;
+    background-color: var(--black);
+}
+/* Case study detail page ends */
+
 @media screen and (max-width: 991px) {
     .section {
         padding-top: var(--tablet-spacing);
@@ -2576,6 +2655,15 @@ input[type="submit"] {
     .color-block {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .case-study-left {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .case-study-top {
+        padding: 20px;
+    }
 }
 
 
@@ -2795,6 +2883,22 @@ input[type="submit"] {
     .user-form, .success-state {
         padding: 25px;
     }
+
+    .case-study-top {
+        padding: 20px;
+    }
+
+    .case-study-outer {
+        flex-flow: column;
+    }
+
+    .key-card {
+        padding: 30px;
+    }
+
+    .case-study-left {
+        max-width: none;
+    }
 }
 
 
@@ -3006,6 +3110,25 @@ input[type="submit"] {
 
     .user-form {
         grid-row-gap: 30px;
+        padding: 20px;
+    }
+
+    .detail-img {
+        padding: 10px;
+    }
+
+    .case-study-inner {
+        display: flex;
+        flex-flow: wrap;
+        align-items: end;
+    }
+
+    .case-study-bottom {
+        grid-row-gap: 1px;
+        flex-flow: column;
+    }
+
+    .key-card {
         padding: 20px;
     }
 }
