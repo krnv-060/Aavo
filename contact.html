@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Review - Aavo - Webflow HTML website template</title>
+        <title>Contact - Aavo - Webflow HTML website template</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,12 +86,79 @@
                                 </div>
 
                                 <div class="contact-bottom">
-                                    
+                                    <div class="contact-inner">
+                                        <div class="contact-card">
+                                            <img src="./images/contact-icon-01.svg" class="contact-icon" alt="Contact icon 01">
+                                            <div class="contact-info">
+                                                <p class="body-small">Address :</p>
+                                                <p class="body-small color-white">501 Locust Ln Willits, California(CA), 95490</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <img src="./images/contact-icon-02.svg" class="contact-icon" alt="Contact icon 02">
+                                            <div class="contact-info">
+                                                <p class="body-small">Email Us :</p>
+                                                <a href="mailto:hello@logoipsum.com" class="contact-link"><div class="body-small">hello@logoipsum.com</div></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-card">
+                                            <img src="./images/contact-icon-03.svg" class="contact-icon" alt="Contact icon 03">
+                                            <div class="contact-info">
+                                                <p class="body-small">Call Us :</p>
+                                                <a href="tel:+1(406)555-0120" class="contact-link"><div class="body-small">+1 (406) 555-0120</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="social-outer">
+                                        <p class="body-small">Follow us</p>
+                                        <div class="social-wrap">
+                                            <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                                                <img src="./images/facebook-icon.svg" loading="lazy" alt="Facebook Icon">
+                                            </a>
+    
+                                            <a href="https://www.linkedin.com/" target="_blank" class="social-link">
+                                                <img src="./images/linkedin-icon.svg" loading="lazy" alt="Linked Icon">
+                                            </a>
+                                            
+                                            <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                                <img src="./images/instagram-icon.svg" loading="lazy" alt="Instagram Icon">
+                                            </a>
+                                            
+                                            <a href="https://www.youtube.com/" target="_blank" class="social-link">
+                                                <img src="./images/youtube-icon.svg" loading="lazy" alt="Youtube Icon">
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="contact-right">
+                                <form action="" class="contact-form">
+                                    <div class="span2">
+                                        <label for="Full-Name">Full Name</label>
+                                        <input class="text-field" name="Full-Name" placeholder="Enter your full name" type="text" id="Full-Name" required="">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="email">Email</label>
+                                        <input class="text-field" name="email" placeholder="Enter your email" type="email" id="email" required="">
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="Phone">Phone</label>
+                                        <input class="text-field" name="Phone" placeholder="Enter your phone number" type="tel" id="Phone" required="">
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <label for="Message">Send Message</label>
+                                        <textarea id="Message" name="Message" placeholder="Enter your message..." class="text-field text-area"></textarea>
+                                    </div>
 
+                                    <input type="submit" data-wait="Please wait..." class="button" value="Submit Now">
+                                </form>
                             </div>
                         </div>
                     </div>
